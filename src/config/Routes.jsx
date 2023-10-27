@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
 import Detail from '../pages/detail/Detail';
-import Genre from '../pages/Genre';
 
 const Router = () => {
   const { pathname } = useLocation();
@@ -19,7 +18,6 @@ const Router = () => {
       <Route path="/:category" element={<Catalog />} />
       <Route path="/:category/search/:keyword" element={<Catalog />} />
       <Route path="/:category/:id" element={<Detail />} />
-      <Route path="/:genre" element={<Genre />} />
     </Routes>
   );
 };
