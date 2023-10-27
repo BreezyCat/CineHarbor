@@ -17046,7 +17046,7 @@ const Sw = () =>
       }),
     ],
   });
-const xw = "./assets/poster-bg-60b614b8.jpg",
+const xw = "./poster-bg-60b614b8.jpg",
   Ew = (e) =>
     w.jsxs(w.Fragment, {
       children: [
@@ -17375,7 +17375,7 @@ const kw = (e) => {
       })
     );
   };
-const Dp = "./assets/logo-39f50a69.png",
+const Dp = "./logo-39f50a69.png",
   yc = [
     { display: "Home", path: "/" },
     { display: "Movies", path: "/movie" },
