@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import tmdbApi, { category } from '../../api/tmdbApi';
+import tmdbApi, { genre, category } from '../../api/tmdbApi';
 import MovieCard from '../movie-card/MovieCard';
 import Button, { Outlinebutton } from '../button/Button';
 import Input from '../input/Input';
@@ -12,30 +12,38 @@ const MovieGenre = (props) => {
   const [page, setPage] = useState(1);
   const [total, setTotalPages] = useState(1);
 
-  const { keyword, genre: selectedGenre } = useParams();
+  const { keyword } = useParams();
 
   useEffect(() => {
     const fetchItems = async () => {
       try {
         let response = null;
-        const params = { page };
+        const params = { };
         if (keyword === undefined) {
-          switch (props.category) {
-            case category.movie:
-              response = await tmdbApi.getAllMovie(selectedGenre, params);
+          switch (props.genre) {
+            case genre.animation:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.animation,
+              });
               break;
-            case category.tv:
-              response = await tmdbApi.getAllTV(selectedGenre, params);
+            case genre.fantasy:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.fantasy,
+              });
+              break;
+            case genre.horror:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.horror,
+              });
               break;
             default:
-              response = await tmdbApi.getAllMovie(selectedGenre, params);
+              response = await tmdbApi.getAllMovie(props.type, params);
           }
         } else {
-          const searchParams = {
+          const params = {
             query: keyword,
-            page,
           };
-          response = await tmdbApi.search(props.category, searchParams);
+          response = await tmdbApi.search(props.category, params);
         }
 
         setItems([response.results]);
@@ -46,7 +54,7 @@ const MovieGenre = (props) => {
     };
 
     fetchItems();
-  }, [props.category, keyword, selectedGenre, page]);
+  }, [props.genre, props.type, props.category, keyword]);
 
   const loadMore = async () => {
     try {
@@ -55,15 +63,24 @@ const MovieGenre = (props) => {
       const params = { page: nextPage };
 
       if (keyword === undefined) {
-        switch (props.category) {
-          case category.movie:
-            response = await tmdbApi.getAllMovie(selectedGenre, params);
-            break;
-          case category.tv:
-            response = await tmdbApi.getAllTV(selectedGenre, params);
-            break;
-          default:
-            response = await tmdbApi.getAllMovie(selectedGenre, params);
+        switch (props.genre) {
+          case genre.animation:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.animation,
+              });
+              break;
+            case genre.fantasy:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.fantasy,
+              });
+              break;
+            case genre.horror:
+              response = await tmdbApi.getAllMovie(props.type, {
+                with_genres: genre.horror,
+              });
+              break;
+            default:
+              response = await tmdbApi.getAllMovie(props.type, params);
         }
       } else {
         const searchParams = {

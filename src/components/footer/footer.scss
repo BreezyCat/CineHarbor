@@ -45,4 +45,11 @@
 
     }
   }
+
+  &-copy{
+    @include flex(center, center);
+    font-size: 1.3rem;
+      font-weight: 500;
+      padding: 1rem 2rem;
+  }
 }

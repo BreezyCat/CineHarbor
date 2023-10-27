@@ -6,22 +6,22 @@ import MovieGenre from '../components/movie-genre/MovieGenre';
 
 const Genre = () => {
   const { genre } = useParams();
-  const { category } = useParams();
+  // const { category } = useParams();
   console.log(genre);
   return (
     <>
       <PageHeader>
         {genre === gnr.animation
           ? 'Animation'
-          : gnr.fantasy
+          :genre === gnr.fantasy
           ? 'Fantasy'
-          : gnr.horror
+          :genre === gnr.horror
           ? 'Horror'
           : 'All'}
       </PageHeader>
       <div className='container'>
         <div className='section mb-3'>
-        <MovieGenre category={category} genre={genre} />
+        <MovieGenre genre={genre} />
         </div>
       </div>
     </>
