@@ -9639,7 +9639,7 @@ function Ug(e, t, n) {
                 : y.pathname,
             ]),
             pathnameBase:
-              y.pathnameBase === "/index.html"
+              y.pathnameBase === "/"
                 ? o
                 : bt([
                     o,
@@ -17370,7 +17370,7 @@ const kw = (e) => {
             element: w.jsx(vc, {}),
           }),
           w.jsx(fr, { path: "/:category", element: w.jsx(vc, {}) }),
-          w.jsx(fr, { path: "/index.html", element: w.jsx(Sw, {}) }),
+          w.jsx(fr, { path: "/", element: w.jsx(Sw, {}) }),
         ],
       })
     );
