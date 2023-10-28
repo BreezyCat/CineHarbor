@@ -17410,7 +17410,7 @@ const Dp = "./assets/logo-39f50a69.png",
               className: "logo",
               children: [
                 w.jsx("img", { src: Dp, alt: "" }),
-                w.jsx(ie, { to: "../", children: "CineHarbor" }),
+                w.jsx(ie, { to: "./", children: "CineHarbor" }),
               ],
             }),
             w.jsx("ul", {
