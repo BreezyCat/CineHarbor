@@ -14,10 +14,10 @@ const Router = () => {
   
   return (
     <Routes>
-      <Route path="/:category/:id" element={<Detail />} />
-      <Route path="/:category/search/:keyword" element={<Catalog />} />
-      <Route path="/:category" element={<Catalog />} />
-      <Route path="/" element={<Home />} />
+      <Route path="./:category/:id" element={<Detail />} />
+      <Route path="./:category/search/:keyword" element={<Catalog />} />
+      <Route path="./:category" element={<Catalog />} />
+      <Route path="./" element={<Home />} />
     </Routes>
   );
 };
