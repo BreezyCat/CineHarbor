@@ -7,15 +7,15 @@ import logo from '../../assets/logo.png';
 const navigation = [
   {
     display: 'Home',
-    path: './',
+    path: '/',
   },
   {
     display: 'Movies',
-    path: './movie',
+    path: '/movie',
   },
   {
     display: 'Series',
-    path: './tv',
+    path: '/tv',
   },
 ];
 
@@ -52,7 +52,7 @@ const Header = () => {
             src={logo}
             alt=''
           />
-          <Link to='./'>CineHarbor</Link>
+          <Link to='/'>CineHarbor</Link>
         </div>
         <ul className='header-navbar'>
           {navigation.map((e, i) => (
