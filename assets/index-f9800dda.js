@@ -17369,7 +17369,7 @@ const kw = (e) => {
             path: "./:category/search/:keyword",
             element: w.jsx(vc, {}),
           }),
-          w.jsx(fr, { path: "./:category", element: w.jsx(vc, {}) }),
+          w.jsx(fr, { path: "./:category/", element: w.jsx(vc, {}) }),
           w.jsx(fr, { path: "./CineHarbor/", element: w.jsx(Sw, {}) }),
         ],
       })
