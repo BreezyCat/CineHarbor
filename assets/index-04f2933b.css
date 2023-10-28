@@ -244,8 +244,8 @@
     font-family: boxicons;
     font-weight: 400;
     font-style: normal;
-    src: url(./assets/boxicons-2d8213f1.eot);
-    src: url(./assets/boxicons-2d8213f1.eot) format("embedded-opentype"), url(./assets/boxicons-43193176.woff2) format("woff2"), url(./assets/boxicons-65837913.woff) format("woff"), url(./assets/boxicons-c8ae15ef.ttf) format("truetype"), url(./assets/boxicons-c2df7adc.svg?#boxicons) format("svg")
+    src: url(./boxicons-2d8213f1.eot);
+    src: url(./boxicons-2d8213f1.eot) format("embedded-opentype"), url(./boxicons-43193176.woff2) format("woff2"), url(./boxicons-65837913.woff) format("woff"), url(./boxicons-c8ae15ef.ttf) format("truetype"), url(./boxicons-c2df7adc.svg?#boxicons) format("svg")
 }
 
 .bx {
