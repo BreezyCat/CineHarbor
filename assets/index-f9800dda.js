@@ -17364,12 +17364,12 @@ const kw = (e) => {
       }, [e]),
       w.jsxs(Zg, {
         children: [
-          w.jsx(fr, { path: "/CineHarbor/:category/:id", element: w.jsx(Ow, {}) }),
+          w.jsx(fr, { path: "/:category/:id", element: w.jsx(Ow, {}) }),
           w.jsx(fr, {
-            path: "/CineHarbor/:category/search/:keyword",
+            path: "/:category/search/:keyword",
             element: w.jsx(vc, {}),
           }),
-          w.jsx(fr, { path: "/CineHarbor/:category/", element: w.jsx(vc, {}) }),
+          w.jsx(fr, { path: "/:category/", element: w.jsx(vc, {}) }),
           w.jsx(fr, { path: "/CineHarbor/", element: w.jsx(Sw, {}) }),
         ],
       })
@@ -17378,8 +17378,8 @@ const kw = (e) => {
 const Dp = "./assets/logo-39f50a69.png",
   yc = [
     { display: "Home", path: "/CineHarbor/" },
-    { display: "Movies", path: "/CineHarbor/movie/" },
-    { display: "Series", path: "/CineHarbor/tv/" },
+    { display: "Movies", path: "/movie/" },
+    { display: "Series", path: "/tv/" },
   ],
   Mw = () => {
     const { pathname: e } = qn(),
@@ -17459,8 +17459,8 @@ const Rw = () =>
                       children: "Menus",
                     }),
                     w.jsx(ie, { to: "/CineHarbor/", children: "Home" }),
-                    w.jsx(ie, { to: "/CineHarbor/movie/", children: "Movies" }),
-                    w.jsx(ie, { to: "/CineHarbor/tv/", children: "Series" }),
+                    w.jsx(ie, { to: "/movie/", children: "Movies" }),
+                    w.jsx(ie, { to: "/tv/", children: "Series" }),
                   ],
                 }),
                 w.jsxs("div", {
