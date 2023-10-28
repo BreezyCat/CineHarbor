@@ -17364,12 +17364,12 @@ const kw = (e) => {
       }, [e]),
       w.jsxs(Zg, {
         children: [
-          w.jsx(fr, { path: "/:category/:id", element: w.jsx(Ow, {}) }),
+          w.jsx(fr, { path: "/CineHarbor/:category/:id", element: w.jsx(Ow, {}) }),
           w.jsx(fr, {
-            path: "/:category/search/:keyword",
+            path: "/CineHarbor/:category/search/:keyword",
             element: w.jsx(vc, {}),
           }),
-          w.jsx(fr, { path: "/:category/", element: w.jsx(vc, {}) }),
+          w.jsx(fr, { path: "/CineHarbor/:category/", element: w.jsx(vc, {}) }),
           w.jsx(fr, { path: "/CineHarbor/", element: w.jsx(Sw, {}) }),
         ],
       })
@@ -17378,8 +17378,8 @@ const kw = (e) => {
 const Dp = "./assets/logo-39f50a69.png",
   yc = [
     { display: "Home", path: "/CineHarbor/" },
-    { display: "Movies", path: "/movie/" },
-    { display: "Series", path: "/tv/" },
+    { display: "Movies", path: "/CineHarbor/movie/" },
+    { display: "Series", path: "/CineHarbor/tv/" },
   ],
   Mw = () => {
     const { pathname: e } = qn(),
@@ -17410,7 +17410,7 @@ const Dp = "./assets/logo-39f50a69.png",
               className: "logo",
               children: [
                 w.jsx("img", { src: Dp, alt: "" }),
-                w.jsx(ie, { to: "./", children: "CineHarbor" }),
+                w.jsx(ie, { to: "/CineHarbor/", children: "CineHarbor" }),
               ],
             }),
             w.jsx("ul", {
@@ -17458,9 +17458,9 @@ const Rw = () =>
                       className: "footer-content-menu-title",
                       children: "Menus",
                     }),
-                    w.jsx(ie, { to: "/CineHarbor", children: "Home" }),
-                    w.jsx(ie, { to: "/movie", children: "Movies" }),
-                    w.jsx(ie, { to: "/tv", children: "Series" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Home" }),
+                    w.jsx(ie, { to: "/CineHarbor/movie/", children: "Movies" }),
+                    w.jsx(ie, { to: "/CineHarbor/tv/", children: "Series" }),
                   ],
                 }),
                 w.jsxs("div", {
@@ -17470,9 +17470,9 @@ const Rw = () =>
                       className: "footer-content-menu-title",
                       children: "Genres",
                     }),
-                    w.jsx(ie, { to: "/", children: "Horror" }),
-                    w.jsx(ie, { to: "/", children: "Animation" }),
-                    w.jsx(ie, { to: "/", children: "Fantasy" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Horror" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Animation" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Fantasy" }),
                   ],
                 }),
                 w.jsxs("div", {
@@ -17482,9 +17482,9 @@ const Rw = () =>
                       className: "footer-content-menu-title-genres",
                       children: "Genres",
                     }),
-                    w.jsx(ie, { to: "./", children: "Action" }),
-                    w.jsx(ie, { to: "./", children: "Sci-fi" }),
-                    w.jsx(ie, { to: "./", children: "Romance" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Action" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Sci-fi" }),
+                    w.jsx(ie, { to: "/CineHarbor/", children: "Romance" }),
                   ],
                 }),
               ],
