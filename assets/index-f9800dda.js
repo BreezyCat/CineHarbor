@@ -17377,7 +17377,7 @@ const kw = (e) => {
   };
 const Dp = "./assets/logo-39f50a69.png",
   yc = [
-    { display: "Home", path: "../" },
+    { display: "Home", path: "./CineHarbor" },
     { display: "Movies", path: "./movie" },
     { display: "Series", path: "./tv" },
   ],
