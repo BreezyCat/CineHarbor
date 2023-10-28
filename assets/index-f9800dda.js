@@ -17364,22 +17364,22 @@ const kw = (e) => {
       }, [e]),
       w.jsxs(Zg, {
         children: [
-          w.jsx(fr, { path: "./:category/:id", element: w.jsx(Ow, {}) }),
+          w.jsx(fr, { path: "/:category/:id", element: w.jsx(Ow, {}) }),
           w.jsx(fr, {
-            path: "./:category/search/:keyword",
+            path: "/:category/search/:keyword",
             element: w.jsx(vc, {}),
           }),
-          w.jsx(fr, { path: "./:category", element: w.jsx(vc, {}) }),
-          w.jsx(fr, { path: "./CineHarbor", element: w.jsx(Sw, {}) }),
+          w.jsx(fr, { path: "/:category", element: w.jsx(vc, {}) }),
+          w.jsx(fr, { path: "/CineHarbor", element: w.jsx(Sw, {}) }),
         ],
       })
     );
   };
 const Dp = "./assets/logo-39f50a69.png",
   yc = [
-    { display: "Home", path: "./CineHarbor" },
-    { display: "Movies", path: "./movie" },
-    { display: "Series", path: "./tv" },
+    { display: "Home", path: "/CineHarbor" },
+    { display: "Movies", path: "/movie" },
+    { display: "Series", path: "/tv" },
   ],
   Mw = () => {
     const { pathname: e } = qn(),
@@ -17447,7 +17447,7 @@ const Rw = () =>
                     className: "logo",
                     children: [
                       w.jsx("img", { src: Dp, alt: "" }),
-                      w.jsx(ie, { to: "./", children: "CineHarbor" }),
+                      w.jsx(ie, { to: "/", children: "CineHarbor" }),
                     ],
                   }),
                 }),
@@ -17458,9 +17458,9 @@ const Rw = () =>
                       className: "footer-content-menu-title",
                       children: "Menus",
                     }),
-                    w.jsx(ie, { to: "./CineHarbor", children: "Home" }),
-                    w.jsx(ie, { to: "./movie", children: "Movies" }),
-                    w.jsx(ie, { to: "./tv", children: "Series" }),
+                    w.jsx(ie, { to: "/CineHarbor", children: "Home" }),
+                    w.jsx(ie, { to: "/movie", children: "Movies" }),
+                    w.jsx(ie, { to: "/tv", children: "Series" }),
                   ],
                 }),
                 w.jsxs("div", {
@@ -17470,9 +17470,9 @@ const Rw = () =>
                       className: "footer-content-menu-title",
                       children: "Genres",
                     }),
-                    w.jsx(ie, { to: "./", children: "Horror" }),
-                    w.jsx(ie, { to: "./", children: "Animation" }),
-                    w.jsx(ie, { to: "./", children: "Fantasy" }),
+                    w.jsx(ie, { to: "/", children: "Horror" }),
+                    w.jsx(ie, { to: "/", children: "Animation" }),
+                    w.jsx(ie, { to: "/", children: "Fantasy" }),
                   ],
                 }),
                 w.jsxs("div", {
