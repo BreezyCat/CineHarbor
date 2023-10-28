@@ -17369,17 +17369,17 @@ const kw = (e) => {
             path: "/:category/search/:keyword",
             element: w.jsx(vc, {}),
           }),
-          w.jsx(fr, { path: "/:category", element: w.jsx(vc, {}) }),
-          w.jsx(fr, { path: "/CineHarbor", element: w.jsx(Sw, {}) }),
+          w.jsx(fr, { path: "/:category/", element: w.jsx(vc, {}) }),
+          w.jsx(fr, { path: "/CineHarbor/", element: w.jsx(Sw, {}) }),
         ],
       })
     );
   };
 const Dp = "./assets/logo-39f50a69.png",
   yc = [
-    { display: "Home", path: "/CineHarbor" },
-    { display: "Movies", path: "/movie" },
-    { display: "Series", path: "/tv" },
+    { display: "Home", path: "/CineHarbor/" },
+    { display: "Movies", path: "/movie/" },
+    { display: "Series", path: "/tv/" },
   ],
   Mw = () => {
     const { pathname: e } = qn(),
