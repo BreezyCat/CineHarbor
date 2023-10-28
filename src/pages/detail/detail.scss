@@ -36,6 +36,11 @@
   margin-top: -200px;
   position: relative;
   padding: 0 2rem;
+  
+  @include tablet {
+    margin-top: -150px;
+
+  }
 
   &-poster {
     flex: 1;

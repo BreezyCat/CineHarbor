@@ -2,6 +2,9 @@
 
 .banner-slide {
   margin-bottom: 3rem;
+  @include tablet {
+    height: 80vh;
+  }
 }
 
 .banner-slide-item {
@@ -42,7 +45,11 @@
       position: relative;
 
       @include tablet {
-        width: 100%;
+        width: 80%;
+      }
+
+      @include mobile {
+        width: 88%;
       }
 
       & > * ~ * {
